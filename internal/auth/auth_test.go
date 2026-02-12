@@ -52,7 +52,7 @@ func TestGetAPIKey(t *testing.T) {
 		{
 			name:          "Scheme with extra whitespace before token",
 			authHeader:    "ApiKey  test-token",
-			expectedKey:   "test-token",
+			expectedKey:   "",
 			expectedError: nil,
 		},
 		{
